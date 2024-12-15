@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUZ91</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PUZ91</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://game2048-ed4d1.web.app"
+                      target="_blank"
+                      >game2048</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://puz91.github.io/index.html/"
+                      target="_blank"
+                      >personal website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#face_recognition"
+                      >face recognition project</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#activities">Activities</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-auto" id="contact">
+                <a class="nav-link" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="hero">
+      <div class="container container-info">
+        <div id="info">
+          <div id="alltext">
+            <h2 class="intro" id="intro-text"></h2>
+            <p class="student" id="student-text"></p>
+          </div>
+
+          <a href="aboutme.html" class="cta-button">Discover More About Me</a>
+        </div>
+
+        <div id="my-photo"><img src="photo/coding.png" alt="coding" /></div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="text-project" style="margin-left: 50px">
+        <h1>Projects</h1>
+      </div>
+      <div class="album py-5">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4"
+          >
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="photo/game2048.png"
+                  alt="game2048"
+                />
+                <div class="card-body">
+                  <h4>game 2048</h4>
+                  <p class="card-text">
+                    A puzzle game whereby you slide tiles to mix matching
+                    numbers, multiplying their value until you reach 2048 (or
+                    higher). It is responsive on computers, tablets, and phones,
+                    utilizing swipe gestures on touch devices and arrow keys on
+                    desktops.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        id="view-button"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">HTML/CSS/JS</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="photo/pop.png" alt="personal website" />
+                <div class="card-body">
+                  <h4>personal website</h4>
+                  <p class="card-text">
+                    My first personal website in high school during the CE Next
+                    Gen camp. The site was created to reflect my personality,
+                    with a playful and interactive component. One of its primary
+                    features is a pop-up feature: when you hit a button, the
+                    character depicting me inside a rocket changes with each
+                    click. After achieving a 'lucky number'—roughly 60
+                    clicks—the rocket explodes, causing a change. Curious to see
+                    what happens? Feel free to browse and find out!
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        id="view-button2"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">HTML/CSS/JS</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12" id="face_recognition">
+              <div class="card shadow-sm">
+                <img src="photo/stem.jpg" alt="stem" />
+                <div class="card-body">
+                  <h4>Face Recognition - Based Smart Lock Door System</h4>
+                  <p class="card-text">
+                    As part of a STEM project, a deep learning model trained on
+                    a custom dataset for facial recognition was used to develop
+                    a smart lock system utilizing Python, OpenCV, and AI.
+                    Arduino and ESP32 were used to connect circuits, and a
+                    webcam was incorporated from a computer to enable facial
+                    recognition. The system ensures safe and effective access
+                    control.
+                  </p>
+                  <div class="d-flex">
+                    <small class="text-body-secondary"
+                      >Python/OpenCV/Arduino</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <div class="container">
+        <div id="carouselExampleDark" class="carousel carousela slide">
+          <h1>Activities</h1>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="photo/posn.png" alt="posn" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>POSN COMPUTER @ KMUTT</h5>
+                <p>
+                  I have experience with C and C++ programming, focusing on
+                  <br />
+                  data structures and algorithms to enhance my problem-solving
+                  and coding efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/crisp-dm.png" class="d-block w-100" alt="learned analysis" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>IT CAMP @ KMITL</h5>
+                <p>
+                  Conducted data analysis following the CRISP-DM methodology,
+                  <br />focusing on developing a predictive model for customer
+                  purchase behavior using NumPy.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/robotic.png" class="d-block w-100" alt="learned robotic" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CAR ROBOTICS @ SPACE INSPIRIUM</h5>
+                <p>
+                  Gained knowledge of the backend systems of banking
+                  applications and practiced penetration testing on a simulated
+                  banking website.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/cybersecurity.png" class="d-block w-100" alt="learned cybersecurity" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CYBERSECURITY @ MU</h5>
+                <p>
+                  Learn the fundamentals of robotics, including motors, sensors,
+                  wheels, and chassis design. Gain practical experience
+                  programming robots using Blockly for car-crashing
+                  competitions.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/teach.png" class="d-block w-100" alt="tutoring" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Tutoring for Computer Olympiad @ Satriwitthaya2</h5>
+                <p>
+                  Tutoring for Computer Olympiad Organized a tutoring session for junior ISM students preparing  
+                  for the competition, teaching essential mathematics and computer science concepts.
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/ecam.JPG" class="d-block w-100" alt="ta" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TA CoSpaces Edu ECAM @ Chulalongkorn University</h5>
+                <p>
+                  During VR workshops, I guided and supported exchange students 
+                  from France and the Philippines, with an emphasis on virtual reality 
+                  development utilizing the CoSpaces Edu platform.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/icdl.jpg" class="d-block w-100" alt="icdl" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ICDL Thailand</h5>
+                <p>
+                  I advanced from the first round to the second round of the ICDL 
+                  (International Certification of Digital Literacy), 
+                  where I learned a lot about big data and artificial intelligence.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/icpc.png" class="d-block w-100" alt="icpc" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ICPC @ Chulalongkorn University</h5>
+                <p>
+                  Competed in the Internal Round by using algorithmic strategies to solve problems efficiently. 
+                  Served on the hospitality team during the National Round, 
+                  assisting and supporting contestants throughout the tournament.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="photo/csr.jpg" class="d-block w-100" alt="csr camp" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CSR Camp 2 @ Chachoengsao Province</h5>
+                <p>
+                  Participated as a volunteer in the establishment of rural schools. 
+                  Contributing to the renovation of a computer laboratory. 
+                  Gained hands-on expertise in electrical wiring and LAN cable installation.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 PUZ91.</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://web.facebook.com/profile.php?id=100011463821833"
+                target="_blank"
+                ><img src="icon/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com/realluczy"
+                target="_blank"
+                ><img src="icon/instagram.svg" alt="ig"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/puz91/"
+                target="_blank"
+                ><img src="icon/github.svg" alt="github"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="mailto:puckanut2549@gmail.com?subject=Hello&body=This%20is%20a%20test%20email."
+                target="_blank"
+                ><img src="icon/gmail.svg" alt="gmail"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/puckanut"
+                target="_blank"
+                ><img src="icon/linkedin.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.youtube.com/@puckanutlaoarpasuwong8537"
+                target="_blank"
+                ><img src="icon/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

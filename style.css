@@ -1,0 +1,274 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #1c1c1c;
+  color: #FFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* เพิ่ม padding เพื่อไม่ให้เนื้อหาติดขอบหน้าจอ */
+}
+
+/* Header*/
+#contact {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+#contact:hover {
+  background: linear-gradient(#1c1c1c,#37306B); /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้เด่นขึ้น */
+}
+#contact a{
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease; 
+}
+#contact:hover a {
+  color: #ffffff;
+}
+#nav-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  background: linear-gradient(#37306B,#66347F,#9E4784);
+}
+
+.container-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  justify-content: space-around; /* กระจายเนื้อหา */
+  padding: 0;
+  flex-wrap: wrap; /* เพิ่มการห่อหุ้มเนื้อหาหากพื้นที่ไม่พอ */
+}
+#info {
+  flex: 1;
+  width: 100%;
+  max-width: 700px; /* จำกัดความกว้างที่เหมาะสม */
+  padding: 20px;
+}
+#intro-text {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+#student-text {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  height: 130px;
+  align-items: center;
+  color: #F0E9D2;
+}
+#my-photo {
+  flex: 1; /* รูปภาพมีขนาดคงที่ */
+  width: 100%;
+  max-width: 500px; /* จำกัดขนาด */
+  margin: 0;
+}
+#my-photo img {
+  width: 100%; /* รูปภาพปรับขนาดตาม container */
+  height: auto; /* รักษาอัตราส่วน */
+  object-fit: cover;
+}
+.intro {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+  border-right: 2px solid #ffffff;
+  /* เคอร์เซอร์ */
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  margin: 20px auto;
+  animation: blink 0.7s step-end infinite;
+  /* กระพริบเคอร์เซอร์ */
+}
+
+/*project section*/
+.projects {
+  padding: 60px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+  background-color: #1c1c1c;
+}
+
+.text-project h1 {
+  font-size: 2.5rem;
+  color: #f8f9fa;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.album {
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px; /* จำกัดความกว้าง */
+  margin: 0 auto; /* จัดกลาง */
+}
+
+.card {
+  overflow: hidden; /* ป้องกันไม่ให้มีส่วนเกิน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้การ์ด */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์การเคลื่อนไหว */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* เคลื่อนการ์ดขึ้นเมื่อ hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px; 
+}
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #6a0dad, #4b0082); 
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* ลบเส้นใต้ */
+  padding: 15px 30px; 
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; 
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #4b0082, #800080);
+  transform: scale(1.1); /* ขยายเมื่อ hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: scale(1); /* ขนาดปกติเมื่อกด */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/*activitie section*/
+#activities {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #FFF;
+}
+.carousel-item img {
+  max-height: 400px; /* จำกัดความสูง */
+  width: 100%; /* ปรับให้รูปเต็ม container */
+  height: auto; /* รักษาอัตราส่วนภาพ */
+  object-fit: cover; /* จัดการให้ภาพถูกครอบไม่ให้บิดเบี้ยว */
+}
+#activities .carousel {
+  max-width: 800px; /* จำกัดความกว้าง */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
+.carousel-item h5 {
+  color: #FFF;
+}
+.carousel-item p {
+  color: #FFF;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* สีดำโปร่งแสง */
+  color: #ffffff;
+  padding: 15px; 
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* เงาข้อความ */
+}
+.carousel-caption h5 {
+  font-size: 1.5rem; 
+  font-weight: 600;
+}
+.carousel-caption p {
+  font-size: 1rem; 
+  line-height: 1.6;
+}
+#activities h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 600;
+  font-family:'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+#backhome {
+  display: flex;
+  justify-content: right;
+  padding-right: 90px;
+  
+}
+#backhome a {
+  color: #141414;
+  text-decoration: underline;
+}
+
+
+/* Media query สำหรับอุปกรณ์หน้าจอขนาดใหญ่ ipad pro */
+@media (max-width: 1024px) {
+  #info {
+    width: 100%;
+    max-width: 600px; /* ปรับขนาดให้พอดีกับหน้าจอ */
+  }
+  #intro-text {
+    font-size: 2rem;
+  }
+  #student-text {
+    font-size: 1rem;
+    height: auto; /* ปรับความสูงให้ยืดหยุ่น */
+  }
+  
+}
+
+/* Media query สำหรับอุปกรณ์ไอแพดและหน้าจอขนาดกลาง */
+@media (max-width: 768px) {
+  #contact a{
+    padding: 10px;
+  }
+  /* Hero Section */
+  .container-info{
+    flex-direction: column;
+  }
+  #info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #my-photo {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #my-photo img {
+    width: 300px;
+  }
+  /* Footer */
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    flex: 1 1 100%;
+  }
+}

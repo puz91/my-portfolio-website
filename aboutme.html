@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #f3f3f7;
+            color: #141414;
+            font-family: "Poppins", sans-serif;
+        }
+        /* index Container */
+        .container {
+        margin-top: 100px; /* เพิ่ม spacing ให้กับเนื้อหา */
+        }
+
+        .text-center {
+        position: relative;
+        text-align: center;
+        background-image: url('./photo/cybersecurity.png'); /* ใส่ path ของภาพตัวเองที่ต้องการ */
+        background-size: cover; /* ให้ภาพครอบคลุมเต็มพื้นที่ */
+        background-position: center; /* จัดภาพให้อยู่กลาง */
+        background-repeat: no-repeat;
+        padding: 50px 20px; /* เพิ่ม padding เพื่อให้เนื้อหาดูไม่ติดขอบ */
+        }
+
+        .text-center::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(150, 32, 213, 0.5); /* ทำให้พื้นหลังมีสีดำแบบโปร่งใส */
+        z-index: 1; /* ให้แน่ใจว่าภาพพื้นหลังจะอยู่ด้านล่าง */
+        }
+
+        .text-center h1 {
+        font-size: 2.5rem;
+        color: #ffffff; 
+        position: relative;
+        font-weight: bold;
+        z-index: 2;
+        }
+
+        .text-center p {
+        font-size: 1.25rem;
+        color: #ffffff; /* สีข้อความสำหรับเนื้อหาต่างๆ */
+        position: relative;
+        z-index: 2;
+        }
+        /* Education, Interests, Hobbies Sections */
+        h2 {
+        font-size: 1.75rem;
+        color: #66347F; /* ใช้สีม่วงกลางสำหรับหัวข้อ */
+        border-bottom: 3px solid #9E4784; /* เส้นใต้เป็นสีม่วงอ่อน */
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        }
+        /* Skill Section */
+        .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+        }
+
+        .skill-item img {
+        width: 60px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .skill-item:hover img {
+        transform: rotate(10deg);
+        filter: brightness(1.2);
+        }
+        /* Back to Home Button */
+        #backhome {
+            margin-top: 20px;
+        }
+        #backhome a {
+            display: inline-block;
+            background: linear-gradient(90deg, #6a0dad, #4b0082); /* ใช้ gradient */
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none; /* ลบเส้นใต้ */
+            padding: 15px 30px; /* เพิ่มขนาดปุ่ม */
+            border-radius: 30px; /* ทำขอบมน */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease; /* แอนิเมชัน */
+        }
+
+        #backhome a:hover {
+            background: linear-gradient(90deg, #4b0082, #800080);
+            transform: scale(1.1); /* ขยายเมื่อ hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+   
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PUZ91</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://game2048-ed4d1.web.app"
+                      target="_blank"
+                      >game2048</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://puz91.github.io/index.html/"
+                      target="_blank"
+                      >personal website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html#face_recognition"
+                      >face recognition project</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#activities">Activities</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-auto" id="contact">
+                <a class="nav-link" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="container mt-5 pt-5">
+      <!-- Introduction Section -->
+      <div class="text-center mt-5">
+        <h1 class="mb-3">About Me</h1>
+        <p class="lead">
+          Hello, My name is Puckanut Laoarpasuwong. You can call me Nut, I'm a
+          freshman computer engineering student at Chulalongkorn University who
+          is enthusiastic about creating effective digital solutions. I have a
+          growth mindset and am always eager to learn about and adapt to new
+          technologies. I'm seeking to gain experience with full-stack
+          development. I hope to work with dynamic teams and contribute to
+          challenging projects as I hone my skills.
+        </p>
+      </div>
+
+      <!-- index Content -->
+      <div class="row mt-5">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <h2>Education</h2>
+          <ul>
+            <li><b>High School:</b> Satriwitthaya 2 school, ISM</li>
+            <li><b>Bachelor's Degree:</b> Chulalongkorn university, CEDT</li>
+          </ul>
+
+          <h2>Interests</h2>
+          <p>Fields I’m deeply interested in:</p>
+          <ul>
+            <li>Software Development</li>
+            <li>Cybersecurity</li>
+            <li>Artificial Intelligence and Machine Learning</li>
+          </ul>
+
+          <h2>Hobbies</h2>
+          <p>When I’m not coding or working on a project, you’ll find me:</p>
+          <ul>
+            <li>Playing the guitar</li>
+            <li>Listening to international music</li>
+            <li>Exploring new technology trends</li>
+          </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Problem-Solving</li>
+            <li>Critical Thinking</li>
+            <li>Time Management</li>
+            <li>Effective Communication</li>
+          </ul>
+
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Programming Languages: C++, JavaScript, Python</li>
+            <li>Frameworks: React, Bootstrap</li>
+            <li>Version Control : Git</li>
+            <li>Tools : Photoshop, VSCode</li>
+          </ul>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <img src="icon/cpp.png" alt="C++" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/javascript.svg" alt="JavaScript" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/python.png" alt="Python" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/react.png" alt="React" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/Bootstrap.png" alt="Bootstrap" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/git-icon-logo.svg" alt="Git" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/vscode.png" alt="VSCode" />
+            </div>
+            <div class="skill-item">
+              <img src="icon/photoshop.png" alt="Photoshop" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="backhome">
+      <a href="index.html">back to home</a>
+    </div>
+
+    <section id="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 PUZ91.</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://web.facebook.com/profile.php?id=100011463821833"
+                target="_blank"
+                ><img src="icon/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com/realluczy"
+                target="_blank"
+                ><img src="icon/instagram.svg" alt="ig"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/puz91/"
+                target="_blank"
+                ><img src="icon/github.svg" alt="github"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="mailto:puckanut2549@gmail.com?subject=Hello&body=This%20is%20a%20test%20email."
+                target="_blank"
+                ><img src="icon/gmail.svg" alt="gmail"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/puckanut"
+                target="_blank"
+                ><img src="icon/linkedin.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.youtube.com/@puckanutlaoarpasuwong8537"
+                target="_blank"
+                ><img src="icon/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
